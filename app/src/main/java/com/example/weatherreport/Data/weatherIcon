@@ -1,0 +1,49 @@
+{
+  "weather":"晴",
+  "location":"sunny"
+},
+{
+  "weather":"阴",
+  "location":"cloudy"
+},
+{
+  "weather":"雾",
+  "location":"haze"
+},
+{
+  "weather":"中雨",
+  "location":"drizzle"
+},
+{
+  "weather":"大雨",
+  "location":"drizzle"
+},
+{
+  "weather":"多云",
+  "location":"mostly_cloudy"
+},
+{
+  "weather":"小雨",
+  "location":"slight_drizzle"
+},
+{
+  "weather":"小雪",
+  "location":"drizzle_snow"
+},
+{
+  "weather":"中雪",
+  "location":"snow"
+},
+{
+  "weather":"大雪",
+  "location":"snow"
+},
+{
+  "weather":"雷阵雨",
+  "location":"thunderstorms_storms"
+},
+{
+  "weather":"thunderstorms_snow_storms",
+  "location":"thunderstorms_snow_storms"
+}
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Start">
+
+    <ImageView
+        android:id="@+id/cdImage"
+        android:layout_width="442dp"
+        android:layout_height="867dp"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/start"
+        android:contentDescription="TODO"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="334dp"
+        android:layout_height="253dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:rotationX="10"
+        android:shadowColor="#00BCD4"
+        android:shadowDx="-5"
+        android:shadowDy="-10"
+        android:shadowRadius="10"
+        android:text="天气预报"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cdImage"
+        app:layout_constraintTop_toTopOf="@+id/cdImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

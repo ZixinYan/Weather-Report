@@ -1,0 +1,67 @@
+[versions]
+agp = "8.3.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+fastjson = "2.0.48"
+kotlin = "1.9.0"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.7.0"
+composeBom = "2023.08.00"
+firebaseCrashlyticsBuildtools = "3.0.0"
+baidumapsdk_location_all = "9.6.0"
+baidumapsdk_map = "7.6.1.1"
+baidumapsdk_search = "7.6.1.1"
+baidumapsdk_location_allVersion = "9.3.7"
+baiduBaidumapsdk_location_all = "9.6.0"
+baidumapsdk_mapVersion = "7.6.1.1"
+baidumapsdk_searchVersion = "7.6.1.1"
+roomRuntime = "2.6.0-alpha01"
+roomCompiler = "2.6.0-alpha01"
+javaxMailApi = "1.6.2"
+androidMail = "1.6.7"
+androidActivation = "1.6.7"
+mail = "1.5.0-b01"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+fastjson = { group = "com.alibaba", name = "fastjson", version.ref = "fastjson" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+ui = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
+baiduMapSDK_Location_All = { group = "com.baidu.lbsyun", name = "BaiduMapSDK_Location_All", version = "9.4.5" }
+baiduMapSDK_Map = { group = "com.baidu.lbsyun", name = "BaiduMapSDK_Map", version = "7.4.0" }
+baiduMapSDK_Search = { group = "com.baidu.lbsyun", name = "BaiduMapSDK_Search", version = "7.5.4" }
+lbsyun-BaiduMapSDK_Location_All = { group = "com.baidu.lbsyun", name = "BaiduMapSDK_Location_All", version.ref = "baidumapsdk_location_allVersion" }
+baidu-BaiduMapSDK_Location_All = { group = "com.baidu.lbsyun", name = "BaiduMapSDK_Location_All", version.ref = "baiduBaidumapsdk_location_all" }
+lbsyun-BaiduMapSDK_Map = { group = "com.baidu.lbsyun", name = "BaiduMapSDK_Map", version.ref = "baidumapsdk_mapVersion" }
+lbsyun-BaiduMapSDK_Search = { group = "com.baidu.lbsyun", name = "BaiduMapSDK_Search", version.ref = "baidumapsdk_searchVersion" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomRuntime" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
+javax-mail-api = { group = "javax.mail", name = "javax.mail-api", version = "1.4.7" }
+android-mail = { group = "com.sun.mail", name = "android-mail", version = "1.6.3" }
+android-activation = { group = "com.sun.mail", name = "android-activation", version.ref = "androidActivation" }
+mail = { group = "javax.mail", name = "mail", version.ref = "mail" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

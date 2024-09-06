@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_schedule_detial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8E0F3"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/titleSetTitle"
+        android:layout_width="341dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:text="设置日程"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/set_title"
+        android:layout_width="377dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:hint="标题"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSetTitle" />
+
+    <EditText
+        android:id="@+id/set_description"
+        android:layout_width="385dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:hint="内容"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_title" />
+
+    <Button
+        android:id="@+id/start_time_button"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="开始时间"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_description" />
+
+    <Button
+        android:id="@+id/end_time_button"
+        android:layout_width="336dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:text="结束时间"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_time_button" />
+
+    <Button
+        android:id="@+id/update_schedule_button"
+        android:layout_width="151dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="108dp"
+        android:text="修改"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete_schedule_button"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/delete_schedule_button"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="108dp"
+        android:text="删除"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

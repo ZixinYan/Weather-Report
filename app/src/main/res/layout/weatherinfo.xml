@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="489dp"
+        android:layout_height="741dp"
+        android:alpha="0.8"
+        android:background="#ACA5A5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/start"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="201dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="250dp"
+        android:fontFamily="serif"
+        android:shadowColor="#615A5A"
+        android:shadowDx="-10"
+        android:shadowDy="-10"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/CityName"
+        android:layout_width="198dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="cursive"
+        android:rotationY="15"
+        android:selectAllOnFocus="false"
+        android:shadowColor="#756F6F"
+        android:shadowDx="-10"
+        android:shadowDy="-10"
+        android:shadowRadius="3"
+        android:text="Beijing"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="370dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-light"
+        android:lineSpacingExtra="48sp"
+        android:paddingTop="20dp"
+        android:text="高温11℃  低温-16℃"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="338dp"
+        android:layout_height="44dp"
+        android:alpha="0.8"
+        android:fontFamily="sans-serif-black"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/temperature"
+        app:layout_constraintEnd_toEndOf="@+id/temperature"
+        app:layout_constraintStart_toStartOf="@+id/temperature" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="223dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="40dp"
+        android:alpha="0.8"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/notice"
+        app:layout_constraintEnd_toEndOf="@+id/temperature"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/temperature" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="403dp"
+        android:layout_height="296dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature" />
+
+    <TextView
+        android:id="@+id/quality"
+        android:layout_width="226dp"
+        android:layout_height="33dp"
+        android:alpha="0.8"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/notice"
+        app:layout_constraintEnd_toEndOf="@+id/temperature"
+        app:layout_constraintStart_toStartOf="@+id/temperature"
+        app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="204dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="16dp"
+        android:baselineAlignBottom="true"
+        android:rotationX="-21"
+        android:rotationY="-15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/CityName"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:srcCompat="@mipmap/sunny" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.7"
+        android:background="#008A8484"
+        android:text="Back"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconTintMode="multiply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

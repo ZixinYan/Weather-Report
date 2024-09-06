@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.weatherreport">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="android.permission.BAIDU_LOCATION_SERVICE"
+        tools:ignore="ReservedSystemPermission" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions"></uses-permission>
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions"></uses-permission>
+
+    <meta-data
+        android:name="com.baidu.lbsapi.API_KEY"
+        android:value="ctUhHi7R6jHCdfo1rTOUKCOM654YwHXz" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/netconfig"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeatherReport"
+        android:windowSoftInputMode="adjustPan"
+        tools:targetApi="31">
+        <activity
+            android:name=".Main.setting"
+            android:exported="false" />
+        <activity
+            android:name=".Main.register"
+            android:exported="false" />
+        <activity android:name=".Main.MP3" />
+        <activity
+            android:name=".Main.CitymanageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Main.WeatherinfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Main.ScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Main.Start"
+            android:exported="false"
+            android:label="@string/title_activity_start"
+            android:theme="@style/Theme.WeatherReport" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main.MyCalendar" />
+        <activity android:name=".Main.AddSchedule" />
+        <activity android:name=".Main.ScheduleDetial" />
+        <activity android:name=".Main.EmailSender" />
+        <activity android:name=".Main.ScheduleStart" />
+
+        <receiver
+            android:name=".Data.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- 实现静态注册 -->
+            <intent-filter android:priority="100">
+                <action android:name="com.example.studyapp.EmailSendBroadcast" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Data.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":myReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="com.example.studyapp.Alarm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Main.LongRunningService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Main.StartService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

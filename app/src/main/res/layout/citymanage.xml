@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6C4DA"
+    tools:context=".Main.CitymanageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="343dp"
+                android:layout_height="56dp"
+                android:fontFamily="serif"
+                android:text="   城    市"
+                android:textAlignment="viewStart"
+                android:textSize="40sp"
+                android:textStyle="bold|italic"
+                android:typeface="serif"
+                app:layout_constraintBottom_toTopOf="@+id/citySearch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.638" />
+
+            <ImageView
+                android:id="@+id/backStart"
+                android:layout_width="32dp"
+                android:layout_height="36dp"
+                android:src="@android:drawable/ic_menu_revert"
+                app:layout_constraintBottom_toTopOf="@+id/citySearch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.625" />
+
+            <EditText
+                android:id="@+id/citySearch"
+                android:layout_width="218dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="44dp"
+                android:alpha="0.5"
+                android:ems="10"
+                android:hint="Please enter full name!!!"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:textAlignment="viewStart"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/citylist"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741" />
+
+            <ImageButton
+                android:id="@+id/citySearchBtn"
+                android:layout_width="66dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="12dp"
+                android:background="#B6C4DA"
+                app:layout_constraintBottom_toTopOf="@+id/citylist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/citySearch"
+                app:layout_constraintTop_toBottomOf="@+id/Title"
+                app:layout_constraintVertical_bias="0.187"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <ListView
+                android:id="@+id/citylist"
+                android:layout_width="368dp"
+                android:layout_height="514dp"
+                android:layout_marginTop="172dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
