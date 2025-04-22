@@ -1,8 +1,9 @@
 # Android 天气预报程序
 
 东北大学Android课程课设，一款简洁实用的天气应用，支持定位天气查询、城市搜索以及日程提醒功能。
-  [主页图片](/doc/main.png)
-  [选择图片](/doc/select.png)
+  
+[主页图片](/doc/main.png)
+[选择图片](/doc/select.png)
 ---
 
 ## 功能一：定位获取天气
